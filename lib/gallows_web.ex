@@ -22,22 +22,20 @@ defmodule GallowsWeb do
       use Phoenix.Controller, namespace: GallowsWeb
       import Plug.Conn
       import GallowsWeb.Router.Helpers
-      # import GallowsWeb.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/gallows_web/templates",
-                        namespace: GallowsWeb
+      use Phoenix.View, 
+        root: "lib/gallows_web/templates",
+        namespace: GallowsWeb
 
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
 
       use Phoenix.HTML
 
       import GallowsWeb.Router.Helpers
-      import GallowsWeb.ErrorHelpers
-      # import GallowsWeb.Gettext
     end
   end
 
@@ -52,7 +50,6 @@ defmodule GallowsWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      # import GallowsWeb.Gettext
     end
   end
 
