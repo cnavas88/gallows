@@ -35,7 +35,7 @@ config :gallows, GallowsWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
-      ~r{priv/gettext/.*(po)$},
+      # ~r{priv/gettext/.*(po)$},
       ~r{lib/gallows_web/views/.*(ex)$},
       ~r{lib/gallows_web/templates/.*(eex)$}
     ]
